@@ -14,7 +14,7 @@ Ce projet consiste en la conception et la mise en place d'une base de données r
 ## 🏗️ Architecture de la Base de Données
 
 ### Diagramme Entité-Relation (ERD)
-![ERD Diagram](erd_diagram.png)
+![ERD Diagram](ERD.pdf)
 
 ### Tables Principales
 
