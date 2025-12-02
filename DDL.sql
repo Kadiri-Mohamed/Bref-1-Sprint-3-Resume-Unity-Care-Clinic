@@ -95,3 +95,6 @@ CREATE TABLE staff (
     department_id INT,
     FOREIGN KEY (department_id) REFERENCES departments(department_id)
 );
+
+--Ex 1
+INSERT INTO patients (first_name, last_name, date_of_birth, gender, phone_number) VALUES ('Alex', 'Johnson', '1990-07-15', 'Male', '1234567890');
