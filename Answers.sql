@@ -24,7 +24,7 @@ WHERE department_id IN (
 SELECT * FROM admissions WHERE admission_date BETWEEN '2024-12-01' AND '2024-12-07';
 
 --Ex 9
-SELECT first_name, last_name,
+SELECT first_name, last_name,   
     CASE 
         WHEN TIMESTAMPDIFF(YEAR, date_of_birth, CURDATE()) < 18 THEN 'Enfant'
         WHEN TIMESTAMPDIFF(YEAR, date_of_birth, CURDATE()) <= 65 THEN 'Adulte'
@@ -41,7 +41,7 @@ FROM doctors
 GROUP BY department_id;
 
 --Ex 12
-SELECT AVG(DATEDIFF(CURDATE(), date_of_birth)/365) FROM patients;
+SELECT AVG(TIMESTAMPDIFF(year, date_of_birth,CURDATE())) FROM patients;
 
 --Ex 13
 SELECT MAX(appointment_date) FROM appointments;
